@@ -1,25 +1,32 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PetMatch - Plataforma Integrada para Adoção Responsável de Animais</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
+
 <body>
 
-    <header class="cabecalho-navegacao sticky-top">
+    <!-- ===== HEADER E NAVEGAÇÃO ===== -->
+    <header class="navbar-header sticky-top">
         <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
             <div class="container-fluid px-4">
-                <a class="navbar-brand fw-bold" href="#inicio">
-                    <span class="icone-logo">🐾</span> PetMatch
+                <a class="navbar-brand fw-bold" href="#home">
+                    <span class="logo-icon">🐾</span> PetMatch
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacao" aria-controls="menuNavegacao" aria-expanded="false" aria-label="Alternar navegação">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="menuNavegacao">
+                <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item"><a class="nav-link" href="#problema">Problema</a></li>
                         <li class="nav-item"><a class="nav-link" href="#solucao">Solução</a></li>
@@ -35,14 +42,15 @@
     </header>
 
     <main>
-        <section id="inicio" class="secao-hero" style="background-image: url('hero-adoption.jpg');">
-            <div class="sobreposicao-hero"></div>
-            <div class="container conteudo-hero">
+        <!-- ===== HERO SECTION COM PARALLAX ===== -->
+        <section id="home" class="hero-section" style="background-image: url('hero-adoption.jpg');">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
                 <div class="row align-items-center min-vh-100">
                     <div class="col-lg-8">
-                        <h1 class="titulo-hero">Conectando Corações, Salvando Vidas</h1>
-                        <p class="subtitulo-hero">PetMatch: A plataforma inovadora para adoção responsável de animais</p>
-                        <div class="botoes-hero">
+                        <h1 class="hero-title">Conectando Corações, Salvando Vidas</h1>
+                        <p class="hero-subtitle">PetMatch: A plataforma inovadora para adoção responsável de animais</p>
+                        <div class="hero-buttons">
                             <a href="#solucao" class="btn btn-primary btn-lg">Conheça a Solução</a>
                             <a href="#contato" class="btn btn-outline-light btn-lg">Fale Conosco</a>
                         </div>
@@ -51,16 +59,17 @@
             </div>
         </section>
 
+        <!-- ===== SEÇÃO: HEADER DO PROJETO (LOGOTIPO, TÍTULO, EQUIPE) ===== -->
         <section id="equipe" class="py-5 bg-light">
             <div class="container">
-                <h2 class="titulo-secao text-center mb-5">Sobre o Projeto PetMatch</h2>
-                
+                <h2 class="section-title text-center mb-5">Sobre o Projeto PetMatch</h2>
+
                 <div class="row mb-5">
                     <div class="col-lg-8 mx-auto text-center">
-                        <div class="cabecalho-projeto">
-                            <div class="logo-projeto">🐾</div>
-                            <h3 class="nome-projeto">PetMatch</h3>
-                            <p class="slogan-projeto">Plataforma Integrada para Adoção Responsável de Animais</p>
+                        <div class="project-header">
+                            <div class="project-logo">🐾</div>
+                            <h3 class="project-name">PetMatch</h3>
+                            <p class="project-tagline">Plataforma Integrada para Adoção Responsável de Animais</p>
                         </div>
                     </div>
                 </div>
@@ -70,27 +79,27 @@
                         <h4 class="mb-4">Nossa Equipe</h4>
                         <div class="row g-4">
                             <div class="col-md-6 col-lg-4">
-                                <div class="cartao-equipe">
-                                    <div class="avatar-equipe">👨‍💻</div>
+                                <div class="team-card">
+                                    <div class="team-avatar">👨‍💼</div>
                                     <h5>Leonardo Santana</h5>
-                                    <p class="funcao-equipe">Desenvolvedor</p>
-                                    <p class="descricao-equipe">Responsável pela codificação Frontend e integração das tecnologias.</p>
+                                    <p class="team-role">Desenvolvedor Frontend</p>
+                                    <p class="team-description">Responsável pela interface e experiência do usuário</p>
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4">
-                                <div class="cartao-equipe">
-                                    <div class="avatar-equipe">🎨</div>
+                                <div class="team-card">
+                                    <div class="team-avatar">👩‍💼</div>
                                     <h5>Aldair Alcin</h5>
-                                    <p class="funcao-equipe">UI/UX Designer</p>
-                                    <p class="descricao-equipe">Responsável pela interface visual, prototipagem e experiência do usuário.</p>
+                                    <p class="team-role">Designer UX/UI</p>
+                                    <p class="team-description">Criação de protótipos e design visual</p>
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4">
-                                <div class="cartao-equipe">
-                                    <div class="avatar-equipe">📊</div>
+                                <div class="team-card">
+                                    <div class="team-avatar">👨‍💻</div>
                                     <h5>Messias Tadeu</h5>
-                                    <p class="funcao-equipe">Analista de Negócios</p>
-                                    <p class="descricao-equipe">Definição de regras de negócio, análise de mercado e estratégia.</p>
+                                    <p class="team-role">Analista de Negócios</p>
+                                    <p class="team-description">Estratégia e análise de mercado</p>
                                 </div>
                             </div>
                         </div>
@@ -99,44 +108,66 @@
             </div>
         </section>
 
+        <!-- ===== SEÇÃO: PROBLEMA IDENTIFICADO ===== -->
         <section id="problema" class="py-5">
             <div class="container">
-                <h2 class="titulo-secao text-center mb-5">O Problema Identificado</h2>
-                
+                <h2 class="section-title text-center mb-5">O Problema Identificado</h2>
+
                 <div class="row align-items-center g-4 mb-5">
                     <div class="col-lg-6">
-                        <img src="hero-adoption.jpg" alt="Família e animais" class="img-fluid rounded shadow" />
+                        <img src="img/problem-abandoned-animals.jpg" alt="Animais abandonados em abrigo"
+                            class="img-fluid rounded-lg shadow" />
                     </div>
                     <div class="col-lg-6">
                         <h3>Abandono Animal: Uma Crise Social</h3>
-                        <p>O abandono de animais é um problema recorrente. Milhões de cães e gatos enfrentam grandes dificuldades para encontrar lares responsáveis e permanentes, enquanto ONGs lutam com poucos recursos.</p>
-                        
+                        <p>O abandono de animais é um problema recorrente no Brasil e no mundo. Milhões de cães e gatos
+                            são resgatados anualmente por ONGs e protetores independentes, que enfrentam grandes
+                            dificuldades para garantir que esses animais encontrem lares responsáveis e permanentes.</p>
+
                         <h4 class="mt-4">Lacunas Identificadas:</h4>
-                        <ul class="lista-problemas">
-                            <li><strong>Interface desatualizada:</strong> Dificuldade em visualizar animais disponíveis.</li>
-                            <li><strong>Busca ineficiente:</strong> Falta de filtros adequados para encontrar o pet ideal.</li>
-                            <li><strong>Falta de dados:</strong> ONGs sem ferramentas para gerenciar adoções.</li>
-                            <li><strong>Segurança:</strong> Falta de validação de perfis.</li>
+                        <ul class="problem-list">
+                            <li><strong>Interface desatualizada:</strong> Sistemas pouco intuitivos e com usabilidade
+                                comprometida</li>
+                            <li><strong>Busca ineficiente:</strong> Poucos filtros e ausência de geolocalização
+                                inteligente</li>
+                            <li><strong>Falta de engajamento:</strong> Ausência de acompanhamento pós-adoção</li>
+                            <li><strong>Insegurança:</strong> Riscos de golpes e falta de validação de usuários</li>
+                            <li><strong>Falta de dados:</strong> ONGs sem dashboards para análise de adoções</li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="row mt-5">
                     <div class="col-lg-10 mx-auto">
-                        <h3 class="text-center mb-4">Conexão com os ODS (ONU)</h3>
+                        <h3 class="text-center mb-4">Conexão com os Objetivos de Desenvolvimento Sustentável (ODS)</h3>
                         <div class="row g-4">
                             <div class="col-md-6">
-                                <div class="cartao-ods">
-                                    <div class="numero-ods">3</div>
+                                <div class="ods-card">
+                                    <div class="ods-number">3</div>
                                     <h5>Saúde e Bem-estar</h5>
-                                    <p>Promove saúde mental através da convivência com animais.</p>
+                                    <p>Promove saúde mental e bem-estar através da convivência com animais de estimação
+                                    </p>
                                 </div>
                             </div>
                             <div class="col-md-6">
-                                <div class="cartao-ods">
-                                    <div class="numero-ods">15</div>
+                                <div class="ods-card">
+                                    <div class="ods-number">12</div>
+                                    <h5>Consumo e Produção Responsáveis</h5>
+                                    <p>Incentiva adoção responsável e sustentável em vez de compra de animais</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="ods-card">
+                                    <div class="ods-number">15</div>
                                     <h5>Vida Terrestre</h5>
-                                    <p>Protege e promove o bem-estar animal, reduzindo o abandono.</p>
+                                    <p>Protege e promove o bem-estar de animais, reduzindo abandono e sofrimento</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="ods-card">
+                                    <div class="ods-number">17</div>
+                                    <h5>Parcerias para Implementação</h5>
+                                    <p>Conecta ONGs, voluntários e adotantes em um ecossistema colaborativo</p>
                                 </div>
                             </div>
                         </div>
@@ -145,88 +176,132 @@
             </div>
         </section>
 
+        <!-- ===== SEÇÃO: SOLUÇÃO PROPOSTA ===== -->
         <section id="solucao" class="py-5 bg-light">
             <div class="container">
-                <h2 class="titulo-secao text-center mb-5">Nossa Solução: PetMatch</h2>
-                
+                <h2 class="section-title text-center mb-5">Nossa Solução: PetMatch</h2>
+
                 <div class="row align-items-center g-4">
                     <div class="col-lg-6">
-                        <img src="solution-platform.jpg" alt="Interface da Plataforma PetMatch" class="img-fluid rounded shadow" />
+                        <img src="img/solution-platform.jpg" alt="Plataforma PetMatch"
+                            class="img-fluid rounded-lg shadow" />
                     </div>
                     <div class="col-lg-6">
                         <h3>Uma Plataforma Moderna e Segura</h3>
-                        <p class="lead">O PetMatch é uma plataforma digital que unifica ONGs e adotantes, focada na experiência do usuário e eficiência.</p>
-                        
+                        <p class="lead">O PetMatch é uma plataforma digital inovadora que unifica ONGs, lares
+                            temporários e pessoas interessadas em adotar animais, com foco na experiência do usuário,
+                            segurança e acompanhamento contínuo do processo de adoção.</p>
+
                         <h4 class="mt-4">Diferenciais Principais:</h4>
-                        <ul class="lista-solucao">
-                            <li>✅ <strong>Match Inteligente:</strong> Sugestões baseadas no perfil.</li>
-                            <li>✅ <strong>Design Intuitivo:</strong> Interface limpa e fácil de usar.</li>
-                            <li>✅ <strong>Responsividade:</strong> Funciona em telemóveis e computadores.</li>
-                            <li>✅ <strong>Conexão Direta:</strong> Facilita a comunicação com as ONGs.</li>
+                        <ul class="solution-list">
+                            <li>✅ <strong>Sistema de Match Inteligente:</strong> Algoritmo exclusivo que sugere animais
+                                baseado no perfil do usuário</li>
+                            <li>✅ <strong>Acompanhamento Pós-Adoção:</strong> Lembretes de cuidados e comunidade de
+                                apoio</li>
+                            <li>✅ <strong>Verificação de Usuários:</strong> Cadastro validado com documentos e termos de
+                                responsabilidade</li>
+                            <li>✅ <strong>Geolocalização Inteligente:</strong> Mapa de animais próximos com rotas até
+                                ONGs</li>
+                            <li>✅ <strong>IA para Cadastro:</strong> Reconhecimento de raça e preenchimento automático
+                                via foto</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- ===== SEÇÃO: FUNCIONALIDADES ===== -->
         <section id="funcionalidades" class="py-5">
             <div class="container">
-                <h2 class="titulo-secao text-center mb-5">Funcionalidades Principais</h2>
-                
+                <h2 class="section-title text-center mb-5">Funcionalidades Principais</h2>
+
                 <div class="row g-4">
                     <div class="col-md-6 col-lg-4">
-                        <div class="cartao-recurso">
-                            <div class="icone-recurso">💕</div>
+                        <div class="feature-card">
+                            <div class="feature-icon">💕</div>
                             <h5>Sistema de Match</h5>
-                            <p>Algoritmo para encontrar a compatibilidade ideal entre pet e dono.</p>
+                            <p>Encontre o pet perfeito para sua família com nosso algoritmo inteligente de
+                                compatibilidade</p>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4">
-                        <div class="cartao-recurso">
-                            <div class="icone-recurso">📍</div>
+                        <div class="feature-card">
+                            <div class="feature-icon">📍</div>
                             <h5>Geolocalização</h5>
-                            <p>Encontre animais próximos da sua região rapidamente.</p>
+                            <p>Descubra animais disponíveis próximos a você com mapa interativo e rotas</p>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4">
-                        <div class="cartao-recurso">
-                            <div class="icone-recurso">📱</div>
-                            <h5>Design Responsivo</h5>
-                            <p>Acesse de qualquer dispositivo com a mesma qualidade de experiência.</p>
+                        <div class="feature-card">
+                            <div class="feature-icon">🛡️</div>
+                            <h5>Verificação Segura</h5>
+                            <p>Cadastro validado com documentos e assinatura digital para adoções responsáveis</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="feature-card">
+                            <div class="feature-icon">📋</div>
+                            <h5>Perfil Psicológico</h5>
+                            <p>Avaliação comportamental detalhada de cada animal para melhor compatibilidade</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="feature-card">
+                            <div class="feature-icon">🎮</div>
+                            <h5>Gamificação</h5>
+                            <p>Ganhe pontos de cuidado e desbloqueie conquistas no acompanhamento pós-adoção</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="feature-card">
+                            <div class="feature-icon">👥</div>
+                            <h5>Comunidade</h5>
+                            <p>Conecte-se com outros adotantes, compartilhe experiências e receba apoio</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- ===== SEÇÃO: COMO FUNCIONA ===== -->
         <section id="como-funciona" class="py-5 bg-light">
             <div class="container">
-                <h2 class="titulo-secao text-center mb-5">Como Funciona o PetMatch</h2>
-                
+                <h2 class="section-title text-center mb-5">Como Funciona o PetMatch</h2>
+
                 <div class="row g-4">
                     <div class="col-lg-10 mx-auto">
-                        <div class="container-passos">
-                            <div class="item-passo">
-                                <div class="numero-passo">1</div>
-                                <div class="conteudo-passo">
-                                    <h4>Cadastro</h4>
-                                    <p>Crie seu perfil e informe suas preferências.</p>
+                        <div class="steps-container">
+                            <div class="step-item">
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <h4>Cadastro e Perfil</h4>
+                                    <p>Crie seu perfil, informe suas preferências e o tipo de animal que deseja adotar.
+                                    </p>
                                 </div>
                             </div>
-                            <div class="divisor-passo"></div>
-                            <div class="item-passo">
-                                <div class="numero-passo">2</div>
-                                <div class="conteudo-passo">
-                                    <h4>Busca</h4>
-                                    <p>Navegue pelos perfis dos animais ou receba sugestões.</p>
+                            <div class="step-divider"></div>
+                            <div class="step-item">
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <h4>Match Inteligente</h4>
+                                    <p>Nosso algoritmo sugere animais compatíveis com seu estilo de vida e perfil.</p>
                                 </div>
                             </div>
-                            <div class="divisor-passo"></div>
-                            <div class="item-passo">
-                                <div class="numero-passo">3</div>
-                                <div class="conteudo-passo">
-                                    <h4>Adoção</h4>
-                                    <p>Entre em contato e agende uma visita.</p>
+                            <div class="step-divider"></div>
+                            <div class="step-item">
+                                <div class="step-number">3</div>
+                                <div class="step-content">
+                                    <h4>Processo de Adoção</h4>
+                                    <p>Inicie o processo, converse com a ONG e realize a visita de pré-adoção.</p>
+                                </div>
+                            </div>
+                            <div class="step-divider"></div>
+                            <div class="step-item">
+                                <div class="step-number">4</div>
+                                <div class="step-content">
+                                    <h4>Acompanhamento</h4>
+                                    <p>Receba lembretes de cuidados e faça parte da nossa comunidade de apoio
+                                        pós-adoção.</p>
                                 </div>
                             </div>
                         </div>
@@ -235,48 +310,130 @@
             </div>
         </section>
 
-        <section id="arquitetura" class="py-5">
+        <!-- ===== SEÇÃO: PROPOSTA DE VALOR E NICHO DE MERCADO ===== -->
+        <section id="proposta-valor" class="py-5">
             <div class="container">
-                <h2 class="titulo-secao text-center mb-5">Arquitetura do Sistema</h2>
-                
-                <div class="row g-5 align-items-center">
+                <h2 class="section-title text-center mb-5">Proposta de Valor e Nicho de Mercado</h2>
+
+                <div class="row g-5">
                     <div class="col-lg-6">
-                        <div class="caixa-arquitetura">
-                            <h3>Estrutura Tecnológica</h3>
-                            
-                            <div class="camada-arquitetura">
-                                <h5>Frontend (Atual)</h5>
-                                <p>HTML5 Semântico, CSS3 Moderno, Bootstrap 5.</p>
+                        <div class="value-box">
+                            <h3>Nossa Proposta de Valor Única</h3>
+                            <p class="lead">"Conectar pessoas e ONGs de forma segura, intuitiva e inteligente,
+                                garantindo adoções responsáveis e acompanhamento contínuo dos pets."</p>
+
+                            <p>O PetMatch se diferencia por oferecer uma experiência completa e integrada que vai além
+                                da simples listagem de animais. Combinamos:</p>
+                            <ul>
+                                <li>Tecnologia inovadora (IA e algoritmos de match)</li>
+                                <li>Segurança e responsabilidade</li>
+                                <li>Engajamento comunitário contínuo</li>
+                                <li>Impacto social mensurável</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="value-box">
+                            <h3>Nosso Nicho de Mercado</h3>
+                            <p class="lead">Atendemos a múltiplos segmentos:</p>
+
+                            <div class="niche-item">
+                                <h5>👨‍👩‍👧‍👦 Adotantes Responsáveis</h5>
+                                <p>Pessoas e famílias que buscam adotar com responsabilidade e receber suporte contínuo
+                                </p>
                             </div>
-                            
-                            <div class="camada-arquitetura">
-                                <h5>Hospedagem</h5>
-                                <p>GitHub Pages / Vercel (Web Server Estático).</p>
+
+                            <div class="niche-item">
+                                <h5>🏢 ONGs de Proteção Animal</h5>
+                                <p>Organizações que precisam de ferramentas modernas para gerenciar adoções e animais
+                                </p>
                             </div>
-                            
-                            <div class="camada-arquitetura">
-                                <h5>Backend (Futuro)</h5>
-                                <p>API REST para gestão de banco de dados.</p>
+
+                            <div class="niche-item">
+                                <h5>🤝 Voluntários e Apoiadores</h5>
+                                <p>Pessoas que desejam colaborar com a causa animal através de lares temporários e
+                                    eventos</p>
                             </div>
                         </div>
                     </div>
-                    
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SEÇÃO: ARQUITETURA CONCEITUAL ===== -->
+        <section id="arquitetura" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="section-title text-center mb-5">Arquitetura Conceitual do Sistema</h2>
+
+                <div class="row g-5 align-items-center">
                     <div class="col-lg-6">
-                        <div class="diagrama-arquitetura">
+                        <div class="architecture-box">
+                            <h3>Estrutura do Sistema Futuro</h3>
+                            <p>O PetMatch será construído com uma arquitetura moderna e escalável:</p>
+
+                            <div class="architecture-layer">
+                                <h5>Frontend</h5>
+                                <p>React.js, Vue.js ou Angular com interface responsiva e intuitiva</p>
+                            </div>
+
+                            <div class="architecture-layer">
+                                <h5>Backend</h5>
+                                <p>Node.js, Python ou Java Spring Boot para lógica de negócio</p>
+                            </div>
+
+                            <div class="architecture-layer">
+                                <h5>Banco de Dados</h5>
+                                <p>PostgreSQL ou MySQL para dados estruturados e confiáveis</p>
+                            </div>
+
+                            <div class="architecture-layer">
+                                <h5>APIs e Integrações</h5>
+                                <p>Google Maps, IA para reconhecimento de imagens, pagamentos</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="architecture-diagram">
                             <svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg">
                                 <defs>
-                                    <marker id="seta" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
-                                        <polygon points="0 0, 10 3, 0 6" fill="#333"/>
+                                    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3"
+                                        orient="auto">
+                                        <polygon points="0 0, 10 3, 0 6" fill="#333" />
                                     </marker>
                                 </defs>
-                                <rect x="50" y="20" width="200" height="50" rx="5" fill="#FF6B6B" opacity="0.8"/>
-                                <text x="150" y="50" text-anchor="middle" fill="white" font-weight="bold">Usuário</text>
-                                <line x1="150" y1="70" x2="150" y2="100" stroke="#333" stroke-width="2" marker-end="url(#seta)"/>
-                                <rect x="50" y="100" width="200" height="50" rx="5" fill="#4ECDC4" opacity="0.8"/>
-                                <text x="150" y="130" text-anchor="middle" fill="white" font-weight="bold">Interface Web (HTML/CSS)</text>
-                                <line x1="150" y1="150" x2="150" y2="180" stroke="#333" stroke-width="2" marker-end="url(#seta)"/>
-                                <rect x="50" y="180" width="200" height="50" rx="5" fill="#95E1D3" opacity="0.8"/>
-                                <text x="150" y="210" text-anchor="middle" fill="white" font-weight="bold">Servidor</text>
+
+                                <rect x="50" y="20" width="200" height="50" rx="5" fill="#FF6B6B" opacity="0.8" />
+                                <text x="150" y="50" text-anchor="middle" fill="white" font-weight="bold">Usuários /
+                                    ONGs</text>
+
+                                <line x1="150" y1="70" x2="150" y2="100" stroke="#333" stroke-width="2"
+                                    marker-end="url(#arrowhead)" />
+
+                                <rect x="50" y="100" width="200" height="50" rx="5" fill="#4ECDC4" opacity="0.8" />
+                                <text x="150" y="130" text-anchor="middle" fill="white" font-weight="bold">Frontend
+                                    (Web/Mobile)</text>
+
+                                <line x1="150" y1="150" x2="150" y2="180" stroke="#333" stroke-width="2"
+                                    marker-end="url(#arrowhead)" />
+
+                                <rect x="50" y="180" width="200" height="50" rx="5" fill="#95E1D3" opacity="0.8" />
+                                <text x="150" y="210" text-anchor="middle" fill="white" font-weight="bold">Backend
+                                    (APIs)</text>
+
+                                <line x1="150" y1="230" x2="150" y2="260" stroke="#333" stroke-width="2"
+                                    marker-end="url(#arrowhead)" />
+
+                                <rect x="50" y="260" width="200" height="50" rx="5" fill="#F38181" opacity="0.8" />
+                                <text x="150" y="290" text-anchor="middle" fill="white" font-weight="bold">Banco de
+                                    Dados</text>
+
+                                <line x1="250" y1="210" x2="300" y2="210" stroke="#333" stroke-width="2"
+                                    marker-end="url(#arrowhead)" />
+                                <rect x="300" y="190" width="80" height="40" rx="5" fill="#FFD93D" opacity="0.8" />
+                                <text x="340" y="215" text-anchor="middle" fill="#333" font-size="12"
+                                    font-weight="bold">APIs</text>
                             </svg>
                         </div>
                     </div>
@@ -284,35 +441,54 @@
             </div>
         </section>
 
-        <section id="tecnologias" class="py-5 bg-light">
+        <!-- ===== SEÇÃO: TECNOLOGIAS DA LANDING PAGE ===== -->
+        <section id="tecnologias" class="py-5">
             <div class="container">
-                <h2 class="titulo-secao text-center mb-5">Tecnologias Utilizadas</h2>
-                
+                <h2 class="section-title text-center mb-5">Tecnologias Utilizadas na Landing Page</h2>
+
                 <div class="row g-4">
                     <div class="col-lg-10 mx-auto">
                         <div class="row g-4">
                             <div class="col-md-6">
-                                <div class="cartao-tecnologia">
-                                    <h4>HTML5 Semântico</h4>
-                                    <p>Estruturação correta do conteúdo usando tags como <code>&lt;header&gt;</code>, <code>&lt;section&gt;</code> e <code>&lt;footer&gt;</code> para melhor acessibilidade e SEO.</p>
+                                <div class="tech-card">
+                                    <h4>HTML5</h4>
+                                    <p>Estrutura semântica com tags modernas como <code>&lt;header&gt;</code>,
+                                        <code>&lt;nav&gt;</code>, <code>&lt;section&gt;</code>,
+                                        <code>&lt;article&gt;</code> e <code>&lt;footer&gt;</code></p>
                                 </div>
                             </div>
                             <div class="col-md-6">
-                                <div class="cartao-tecnologia">
-                                    <h4>CSS3 & Variáveis</h4>
-                                    <p>Estilização moderna utilizando variáveis CSS (`:root`) para consistência de cores e manutenção facilitada.</p>
+                                <div class="tech-card">
+                                    <h4>CSS3</h4>
+                                    <p>Estilos avançados com Flexbox, Grid, Media Queries, Variáveis CSS e efeitos
+                                        visuais modernos</p>
                                 </div>
                             </div>
                             <div class="col-md-6">
-                                <div class="cartao-tecnologia">
+                                <div class="tech-card">
                                     <h4>Bootstrap 5</h4>
-                                    <p>Framework utilizado para o sistema de Grid, componentes responsivos (Navbar, Cards) e utilitários de espaçamento.</p>
+                                    <p>Framework responsivo para layout grid, componentes pré-estilizados e sistema de
+                                        classes utilitárias</p>
                                 </div>
                             </div>
                             <div class="col-md-6">
-                                <div class="cartao-tecnologia">
-                                    <h4>Flexbox & Grid</h4>
-                                    <p>Técnicas de layout CSS modernas utilizadas para alinhar elementos e criar estruturas flexíveis na página.</p>
+                                <div class="tech-card">
+                                    <h4>Google Fonts</h4>
+                                    <p>Tipografia profissional com fontes Poppins e Inter para hierarquia visual clara
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="tech-card">
+                                    <h4>Efeitos Inovadores</h4>
+                                    <p>Parallax, cards interativos com hover, scroll-snapping, sticky header e
+                                        transições suaves</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="tech-card">
+                                    <h4>Responsividade</h4>
+                                    <p>Design mobile-first com breakpoints para desktop, tablet e smartphone</p>
                                 </div>
                             </div>
                         </div>
@@ -321,37 +497,126 @@
             </div>
         </section>
 
+        <!-- ===== SEÇÃO: DEPOIMENTOS ===== -->
+        <section id="depoimentos" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="section-title text-center mb-5">O Que Nossos Usuários Diriam</h2>
+
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="testimonial-card">
+                            <div class="testimonial-header">
+                                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%234ECDC4'/%3E%3Ctext x='50' y='60' text-anchor='middle' font-size='50' fill='white'%3E%F0%9F%91%A8%3C/text%3E%3C/svg%3E"
+                                    alt="Avatar" class="testimonial-avatar" />
+                                <div>
+                                    <h5>Carlos Mendes</h5>
+                                    <p class="testimonial-role">Adotante</p>
+                                </div>
+                            </div>
+                            <p class="testimonial-text">"O PetMatch tornou o processo de adoção muito mais fácil e
+                                seguro. O sistema de match me ajudou a encontrar o pet perfeito para minha família!"</p>
+                            <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="testimonial-card">
+                            <div class="testimonial-header">
+                                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%23FF6B6B'/%3E%3Ctext x='50' y='60' text-anchor='middle' font-size='50' fill='white'%3E%F0%9F%91%A9%3C/text%3E%3C/svg%3E"
+                                    alt="Avatar" class="testimonial-avatar" />
+                                <div>
+                                    <h5>Ana Silva</h5>
+                                    <p class="testimonial-role">Coordenadora de ONG</p>
+                                </div>
+                            </div>
+                            <p class="testimonial-text">"Como coordenadora de uma ONG, o PetMatch nos deu ferramentas
+                                incríveis para gerenciar adoções e acompanhar o bem-estar dos animais após a adoção."
+                            </p>
+                            <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="testimonial-card">
+                            <div class="testimonial-header">
+                                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%2395E1D3'/%3E%3Ctext x='50' y='60' text-anchor='middle' font-size='50' fill='white'%3E%F0%9F%91%A8%E2%80%8D%F0%9F%92%BB%3C/text%3E%3C/svg%3E"
+                                    alt="Avatar" class="testimonial-avatar" />
+                                <div>
+                                    <h5>Roberto Santos</h5>
+                                    <p class="testimonial-role">Voluntário</p>
+                                </div>
+                            </div>
+                            <p class="testimonial-text">"Ser voluntário no PetMatch é gratificante. A comunidade é
+                                acolhedora e o impacto que fazemos juntos é realmente transformador!"</p>
+                            <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SEÇÃO: DESAFIOS E SOLUÇÕES ===== -->
         <section id="desafios" class="py-5">
             <div class="container">
-                <h2 class="titulo-secao text-center mb-5">Desafios Enfrentados</h2>
-                
+                <h2 class="section-title text-center mb-5">Desafios Enfrentados e Soluções</h2>
+
                 <div class="row g-4">
                     <div class="col-lg-10 mx-auto">
-                        <div class="accordion" id="acordeaoDesafios">
+                        <div class="accordion" id="accordionChallenges">
                             <div class="accordion-item">
-                                <h2 class="accordion-header" id="cabecalhoUm">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#desafio1" aria-expanded="true" aria-controls="desafio1">
-                                        <strong>Desafio 1:</strong> Efeito Parallax com CSS Puro
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#challenge1" aria-expanded="true" aria-controls="challenge1">
+                                        <strong>Desafio 1:</strong> Definir a Arquitetura Conceitual do Sistema
                                     </button>
                                 </h2>
-                                <div id="desafio1" class="accordion-collapse collapse show" aria-labelledby="cabecalhoUm" data-bs-parent="#acordeaoDesafios">
+                                <div id="challenge1" class="accordion-collapse collapse show"
+                                    aria-labelledby="headingOne" data-bs-parent="#accordionChallenges">
                                     <div class="accordion-body">
-                                        <p><strong>Desafio:</strong> Criar um efeito visual atraente na imagem de capa sem usar JavaScript pesado.</p>
-                                        <p><strong>Solução:</strong> Utilizamos a propriedade CSS <code>background-attachment: fixed</code> na classe <code>.secao-hero</code>, criando um efeito de profundidade (parallax) de forma leve e nativa.</p>
+                                        <p><strong>Problema:</strong> Entender como estruturar um sistema completo que
+                                            atendesse a múltiplos tipos de usuários (adotantes, ONGs, voluntários) foi
+                                            complexo.</p>
+                                        <p><strong>Solução:</strong> Realizamos brainstormings colaborativos, mapeamos
+                                            fluxos de usuários e criamos diagramas de arquitetura. Estudamos plataformas
+                                            similares e adaptamos as melhores práticas.</p>
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <div class="accordion-item">
-                                <h2 class="accordion-header" id="cabecalhoDois">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#desafio2" aria-expanded="false" aria-controls="desafio2">
-                                        <strong>Desafio 2:</strong> Responsividade Mobile-First
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#challenge2" aria-expanded="false" aria-controls="challenge2">
+                                        <strong>Desafio 2:</strong> Criar uma Landing Page Responsiva e Inovadora
                                     </button>
                                 </h2>
-                                <div id="desafio2" class="accordion-collapse collapse" aria-labelledby="cabecalhoDois" data-bs-parent="#acordeaoDesafios">
+                                <div id="challenge2" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                    data-bs-parent="#accordionChallenges">
                                     <div class="accordion-body">
-                                        <p><strong>Desafio:</strong> Garantir que a plataforma funcionasse perfeitamente em celulares e computadores.</p>
-                                        <p><strong>Solução:</strong> Uso extensivo do sistema de Grid do Bootstrap e Media Queries personalizadas para ajustar fontes e espaçamentos em telas menores.</p>
+                                        <p><strong>Problema:</strong> Implementar efeitos visuais modernos (parallax,
+                                            cards interativos) mantendo a responsividade em todos os dispositivos.</p>
+                                        <p><strong>Solução:</strong> Utilizamos CSS3 avançado, media queries e Bootstrap
+                                            para garantir adaptabilidade. Testamos em múltiplos dispositivos e
+                                            otimizamos o desempenho.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#challenge3" aria-expanded="false" aria-controls="challenge3">
+                                        <strong>Desafio 3:</strong> Comunicar a Proposta de Valor de Forma Clara
+                                    </button>
+                                </h2>
+                                <div id="challenge3" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                    data-bs-parent="#accordionChallenges">
+                                    <div class="accordion-body">
+                                        <p><strong>Problema:</strong> Sintetizar toda a complexidade do projeto em uma
+                                            landing page concisa e impactante.</p>
+                                        <p><strong>Solução:</strong> Focamos em storytelling visual, hierarquia de
+                                            informações clara e seções bem estruturadas. Usamos imagens impactantes e
+                                            textos diretos para comunicar cada conceito.</p>
                                     </div>
                                 </div>
                             </div>
@@ -361,13 +626,53 @@
             </div>
         </section>
 
-        <section id="contato" class="py-5 bg-light">
+        <!-- ===== SEÇÃO: APRENDIZADOS ===== -->
+        <section id="aprendizados" class="py-5 bg-light">
             <div class="container">
-                <h2 class="titulo-secao text-center mb-5">Entre em Contato</h2>
-                
+                <h2 class="section-title text-center mb-5">Aprendizados da Equipe</h2>
+
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="learning-card">
+                            <div class="learning-icon">🎯</div>
+                            <h4>Importância da Pesquisa de Mercado</h4>
+                            <p>Entender profundamente o problema e o mercado é essencial para criar soluções relevantes
+                                e diferenciadas.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="learning-card">
+                            <div class="learning-icon">🤝</div>
+                            <h4>Colaboração Efetiva</h4>
+                            <p>Trabalhar em equipe multidisciplinar (frontend, design, negócios) trouxe perspectivas
+                                valiosas e soluções mais criativas.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="learning-card">
+                            <div class="learning-icon">💡</div>
+                            <h4>Foco na Experiência do Usuário</h4>
+                            <p>O design centrado no usuário garante que a plataforma seja intuitiva e atenda às
+                                necessidades reais de adotantes e ONGs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SEÇÃO: CONTATO ===== -->
+        <section id="contato" class="py-5">
+            <div class="container">
+                <h2 class="section-title text-center mb-5">Entre em Contato</h2>
+
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
-                        <form class="formulario-contato">
+                        <p class="text-center lead mb-4">Tem alguma dúvida, sugestão ou quer saber mais sobre o
+                            PetMatch? Envie-nos uma mensagem!</p>
+
+                        <form class="contact-form">
                             <div class="mb-3">
                                 <label for="nome" class="form-label">Nome</label>
                                 <input type="text" class="form-control" id="nome" required>
@@ -388,14 +693,18 @@
         </section>
     </main>
 
+    <!-- ===== FOOTER ===== -->
     <footer class="bg-dark text-white py-4">
         <div class="container text-center">
             <p class="mb-0">&copy; 2025 PetMatch. Todos os direitos reservados.</p>
-            <p class="small">Desenvolvido Leonardo, Aldair e Messias.</p>
+            <p class="small">Desenvolvido por Leonardo, Aldair e Messias.</p>
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="/js/script.js"></script>
 </body>
+
 </html>
