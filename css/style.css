@@ -189,10 +189,10 @@ code {
 .hero-section {
     position: relative;
     min-height: 100vh;
-    background-attachment: fixed;
-    background-position: center;
+    background-position: center top; 
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed; 
     display: flex;
     align-items: center;
     overflow: hidden;
@@ -751,6 +751,8 @@ footer p {
 
 @media (max-width: 768px) {
     .hero-section {
+        background-attachment: scroll;
+        background-position: center top; 
         min-height: 80vh;
     }
     .hero-title {
