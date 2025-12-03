@@ -749,6 +749,19 @@ footer p {
     color: rgba(255, 255, 255, 0.8);
 }
 
+.img-destaque {
+    border-radius: var(--radius-lg);       
+    box-shadow: var(--shadow-xl);          
+    border: 5px solid var(--color-white);  
+    width: 100%;                           
+    object-fit: cover;                     
+    transition: transform var(--transition-base);
+}
+
+.img-destaque:hover {
+    transform: scale(1.02); /* Faz a imagem crescer um pouquinho quando passa o mouse */
+}
+
 @media (max-width: 768px) {
     .hero-section {
         background-attachment: scroll;
