@@ -96,4 +96,4 @@ pet-match-landing-page/
 
 Você pode visualizar a versão atual do projeto hospedada no GitHub Pages:
 
-👉 [Acesse o PetMatch aqui](https://lsantanadev.github.io/pet-match-landing-page/)**
+👉 [Acesse o PetMatch aqui](https://lsantanadev.github.io/pet-match-landing-page/)
